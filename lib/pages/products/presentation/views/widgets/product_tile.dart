@@ -9,24 +9,23 @@ ListTile productTile(Product product) {
 
   return ListTile(
     isThreeLine: true,
-    leading: Image.network(
-      'https://sta.farawlah.sa/storage/$imgUrl',
+    leading: SizedBox(
       width: 100,
-      fit: BoxFit.cover,
-      loadingBuilder: (context, child, loadingProgress) {
-        if (loadingProgress == null) return child;
-        return SizedBox(
-          width: 100,
-          height: 100,
-          child: CircularProgressIndicator(
+      height: 100,
+      child: Image.network(
+        'https://sta.farawlah.sa/storage/$imgUrl',
+        fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return CircularProgressIndicator(
             value: perc(
                   loadingProgress.cumulativeBytesLoaded,
                   loadingProgress.expectedTotalBytes,
                 ) *
                 0.01,
-          ),
-        );
-      },
+          );
+        },
+      ),
     ),
     minLeadingWidth: 0.0,
     title: Text(
