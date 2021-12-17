@@ -15,12 +15,16 @@ ListTile productTile(Product product) {
       fit: BoxFit.cover,
       loadingBuilder: (context, child, loadingProgress) {
         if (loadingProgress == null) return child;
-        return CircularProgressIndicator(
-          value: perc(
-                loadingProgress.cumulativeBytesLoaded,
-                loadingProgress.expectedTotalBytes,
-              ) *
-              0.01,
+        return SizedBox(
+          width: 100,
+          height: 100,
+          child: CircularProgressIndicator(
+            value: perc(
+                  loadingProgress.cumulativeBytesLoaded,
+                  loadingProgress.expectedTotalBytes,
+                ) *
+                0.01,
+          ),
         );
       },
     ),
