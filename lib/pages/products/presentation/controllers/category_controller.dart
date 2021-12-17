@@ -57,22 +57,22 @@ class CategoryController extends SuperController<List> {
 
   @override
   void onDetached() {
-    print('onDetached called');
+    // print('onDetached called');
   }
 
   @override
   void onInactive() {
-    print('onInative called');
+    // print('onInative called');
   }
 
   @override
   void onPaused() {
-    print('onPaused called');
+    // print('onPaused called');
   }
 
   @override
   void onResumed() {
-    print('onResumed called');
+    // print('onResumed called');
   }
 
   @override

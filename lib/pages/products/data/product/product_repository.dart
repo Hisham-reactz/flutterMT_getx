@@ -9,7 +9,6 @@ class ProductRepository implements IProductRepository {
   Future<List> getProducts([
     param = 'store_id=2&offset=0&limit=20&sort_by=sale_price&sort_type=DESC',
   ]) async {
-    print('/products?$param');
     final products = await provider.getProducts(
       '/products?$param',
     );
