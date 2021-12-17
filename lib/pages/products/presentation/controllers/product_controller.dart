@@ -60,6 +60,7 @@ class ProductController extends SuperController<List> {
   void getProducts([bool? sub, int? cat]) {
     if (cat != null) {
       sub! ? subcatId = cat : catId = cat;
+      _page.value = 0;
     }
     change(value, status: RxStatus.loading());
     fetchProducts(
