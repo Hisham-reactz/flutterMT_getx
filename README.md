@@ -1,17 +1,67 @@
-# example
 
-A new Flutter project.
+# Flutter Product Listing
 
-## Getting Started
+ Flutter Product Listing & Filter using Getx.  
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Run Locally
 
-- [Lab: Write your first Flutter app](https://flutter.dev/documentation/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/documentation/cookbook)
+Clone the project
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutterMT_getx
+```bash
+  git clone https://github.com/Hisham-reactz/flutterMT_getx.git
+```
+
+Go to the project directory
+
+```bash
+  cd flutterMT_getx
+```
+
+Install dependencies
+
+```bash
+  flutter create .
+```
+
+Run the app
+
+```bash
+  flutter run
+```
+
+
+## Features
+
+- Product Listing
+- Product Filter
+
+
+## Tech Stack
+
+**Client:** Flutter , Getx.
+
+**Packages Used:** get.
+
+
+
+## Lessons Learned
+
+Getx ,Getx connect 
+
+## Authors
+
+- [@hisham-reactz](https://www.github.com/hisham-reactz)
+
+
+## Contributing
+
+Contributions are always welcome!
+
+
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at hishamdev@protonmail.com
+
