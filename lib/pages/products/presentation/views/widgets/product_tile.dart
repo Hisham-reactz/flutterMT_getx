@@ -17,7 +17,7 @@ ListTile productTile(Product product) {
         fit: BoxFit.cover,
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
-          return CircularProgressIndicator(
+          return LinearProgressIndicator(
             value: perc(
                   loadingProgress.cumulativeBytesLoaded,
                   loadingProgress.expectedTotalBytes,
